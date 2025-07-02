@@ -1,0 +1,128 @@
+.footerWrapper {
+  background-image: url('../assets/FooterImageBanner.png');
+  max-width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  padding-top: 4rem;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+}
+.brandBlock{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem;
+}
+.footerlinkheadings{
+    font-family: var(--font-family-inter);
+    font-size: 20px;
+    line-height: 28px;
+    color: #D5D2EC;
+    margin-bottom: 1rem;
+}
+.footerpara{
+    font-family: var(--font-family-inter);
+    font-size: 16px;
+    line-height: 28px;
+    color: #D5D2EC;
+}
+.topSection {
+  padding-bottom: 3rem;
+}
+
+.bookBtn {
+  background-color: #ffd600;
+  color: #000;
+  font-weight: 600;
+  padding: 10px 24px;
+  border: none;
+  border-radius: 50px;
+  margin-top: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.bookBtn:hover {
+  background-color: #ffcc00;
+  color: #000;
+}
+
+.bottomBar {
+  background-color: #5646f2;
+  padding: 1rem 0;
+  font-size: 0.875rem;
+}
+
+/* Scoped list styling */
+.listLinks {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5px 25px; /* Adjust row and column gaps */
+  padding: 0;
+  margin: 0;
+}
+
+.listLinks li a{
+  text-decoration: none;
+  color: #ffffff80 ;
+  font-size: 15px;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.listLinks li a:hover {
+  color: #ffffff;
+}
+.listquickLinks{
+  display: flex;
+  flex-direction: column;
+  row-gap: 9px;
+
+}
+.listquickLinks li a {
+  /* margin-bottom: 1rem; */
+  cursor: pointer;
+  transition: color 0.2s ease;
+  text-decoration: none;
+  color: #ffffff80 ;
+  
+}
+
+.listquickLinks li a:hover {
+  color: #ffffff;
+}
+
+.bottomBar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .footerWrapper {
+    padding-top: 2rem;
+  }
+  .FooterLogo{
+    width: 80%;
+    height: 80%;
+    margin-bottom: 1rem;
+  }
+  
+  .brandBlock {
+    padding: 1rem;
+  }
+  
+  .footerlinkheadings {
+    font-size: 18px;
+  }
+  
+  .footerpara {
+    font-size: 14px;
+  }
+  
+  .bookBtn {
+    width: 100%;
+    text-align: center;
+  }
+}
