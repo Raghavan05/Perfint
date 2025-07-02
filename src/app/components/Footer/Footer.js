@@ -1,5 +1,6 @@
 // components/Footer.js
 "use client";
+import Image from 'next/image'
 
 
 export default function Footer() {
@@ -12,14 +13,12 @@ export default function Footer() {
                 <div className="lg:w-1/3 flex flex-col items-start gap-6">
                     {/* Logo + Tagline */}
                     <div>
-                        <img src="/logo.svg" alt="Perfint Logo" className="w-32 mb-2" />
+                        <Image src="/Logo.svg" alt="Perfint Logo" className="w-32 mb-2" />
                         <p className="italic text-sm text-gray-300">New Directions in Interventional Oncology</p>
                     </div>
 
                     {/* World Map */}
-                    <img src="/WorldMap.svg" alt="World Map" className="w-full max-w-xs" />
-
-                    {/* Address */}
+                    <Image src="/WorldMap.svg" alt="World Map" className="w-full max-w-xs" />
 
                 </div>
 
@@ -81,7 +80,7 @@ export default function Footer() {
                         </ul>
                     </div>
                     <div className="col-span-2 lg:col-span-5 text-sm text-gray-400 mt-6 flex flex-col items-start max-w-3xl">
-                        <img src="/FooterAddressIcon.svg" alt="Address Icon" className="w-28 mb-2" />
+                        <Image src="/FooterAddressIcon.svg" alt="Address Icon" className="w-28 mb-2" />
                         <p className="text-orange-500 font-semibold mt-2">INDIA</p>
                         <p className="leading-relaxed">
                             Perfint Healthcare, (HO), Plot No 8, Annai Indira Nagar 1st Street, Okkkiyam,<br />
