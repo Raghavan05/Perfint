@@ -1,0 +1,81 @@
+.hexWrapper {
+  position: relative;
+  width: 400px;
+  height: 380px;
+  margin: auto;
+}
+
+.hex {
+  position: absolute;
+  width: 117.75px;
+  height: 136.56px;
+  overflow: hidden;
+}
+.hex {
+  position: absolute;
+  width: 117.75px;
+  height: 136.56px;
+  overflow: hidden;
+
+}
+/* Gradient overlay */
+
+.hex img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+    
+.hexCenter {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-40%, -60%);
+}
+
+/* Position hexes manually */
+.hex1 { top: 0; left: 35%; transform: translateX(-50%); }
+.hex2 { top: 0; left: 70%; transform: translate(-50%, 0); }
+.hex3 { top: 50%; left: 0; transform: translateY(-50%); }
+.hex4 { top: 50%; left: 100%; transform: translate(-100%, -50%); }
+.hex5 { bottom: 0; left: 35%; transform: translate(-50%, 0); }
+.hex6 { bottom: 0; left: 70%; transform: translateX(-50%); }
+
+
+@media screen and (max-width: 1024px) {
+  .hexWrapper {
+    width: 320px;
+    height: 300px;
+  }
+
+  .hex {
+    width: 90px;
+    height: 105px;
+  }
+
+  .hexCenter {
+    width: 60px;
+    height: 60px;
+    transform: translate(-40%, -60%);
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .hexWrapper {
+    width: 260px;
+    height: 260px;
+  }
+
+  .hex {
+    width: 80px;
+    height: 90px;
+  }
+
+  .hexCenter {
+    width: 50px;
+    height: 50px;
+    transform: translate(-40%, -60%);
+  }
+}

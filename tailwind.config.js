@@ -7,7 +7,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Meta Pro', 'Arial', 'Helvetica', 'sans-serif'],
+        sans: ['Meta Pro','sans-serif'],
       },
       container: {
         center: true,
@@ -24,3 +24,4 @@ module.exports = {
   },
   plugins: [],
 }
+

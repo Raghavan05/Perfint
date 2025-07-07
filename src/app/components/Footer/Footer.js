@@ -13,12 +13,12 @@ export default function Footer() {
                 <div className="lg:w-1/3 flex flex-col items-start gap-6">
                     {/* Logo + Tagline */}
                     <div>
-                        <Image src="/Logo.svg" alt="Perfint Logo" className="w-32 mb-2" />
-                        <p className="italic text-sm text-gray-300">New Directions in Interventional Oncology</p>
+                        <Image src="/Logo.svg" alt="Perfint Logo" width={167} height={67} className="w-32 mb-2" />
+                        <p className="italic text-sm text-gray-300">New Directions in <br/> Interventional Oncology</p>
                     </div>
 
                     {/* World Map */}
-                    <Image src="/WorldMap.svg" alt="World Map" className="w-full max-w-xs" />
+                    <Image src="/WorldMap.svg" alt="World Map" width={100} height={100} className="w-full max-w-xs" />
 
                 </div>
 
@@ -27,7 +27,7 @@ export default function Footer() {
                     {/* Column: Products */}
                     <div>
                         <h4 className="text-orange-500 font-semibold mb-3">Products</h4>
-                        <ul className="space-y-1 text-gray-300">
+                        <ul className="space-y-1 text-[#8B8B8B]">
                             <li>MAXIO</li>
                             <li>ROBIO EX</li>
                             <li>NAVIOS</li>
@@ -38,7 +38,7 @@ export default function Footer() {
                     {/* Column: Benefits */}
                     <div>
                         <h4 className="text-orange-500 font-semibold mb-3">Benefits</h4>
-                        <ul className="space-y-1 text-gray-300">
+                        <ul className="space-y-1 text-[#8B8B8B]">
                             <li>Physicians</li>
                             <li>Patients</li>
                             <li>Hospitals</li>
@@ -48,7 +48,7 @@ export default function Footer() {
                     {/* Column: Scientific Resources */}
                     <div>
                         <h4 className="text-orange-500 font-semibold mb-3">Scientific Resources</h4>
-                        <ul className="space-y-1 text-gray-300">
+                        <ul className="space-y-1 text-[#8B8B8B]">
                             <li>MAXIO Casestudies</li>
                             <li>ROBIO EX Casestudies</li>
                             <li>Publications</li>
@@ -61,7 +61,7 @@ export default function Footer() {
                     {/* Column: About Us */}
                     <div>
                         <h4 className="text-orange-500 font-semibold mb-3">About Us</h4>
-                        <ul className="space-y-1 text-gray-300">
+                        <ul className="space-y-1 text-[#8B8B8B]">
                             <li>Company</li>
                             <li>Advisory Board</li>
                             <li>Leadership Team</li>
@@ -73,16 +73,16 @@ export default function Footer() {
                     {/* Column: Contact Us */}
                     <div>
                         <h4 className="text-orange-500 font-semibold mb-3">Contact Us</h4>
-                        <ul className="space-y-1 text-gray-300">
+                        <ul className="space-y-1 text-[#8B8B8B]">
                             <li>Careers</li>
                             <li>Installations</li>
                             <li>Media</li>
                         </ul>
                     </div>
                     <div className="col-span-2 lg:col-span-5 text-sm text-gray-400 mt-6 flex flex-col items-start max-w-3xl">
-                        <Image src="/FooterAddressIcon.svg" alt="Address Icon" className="w-28 mb-2" />
+                        <Image src="/FooterAddressIcon.svg" alt="Address Icon" width={28} height={28} className="w-28 mb-2" />
                         <p className="text-orange-500 font-semibold mt-2">INDIA</p>
-                        <p className="leading-relaxed">
+                        <p className="leading-relaxed text-[#DFDFDF]">
                             Perfint Healthcare, (HO), Plot No 8, Annai Indira Nagar 1st Street, Okkkiyam,<br />
                             Thoraipakkam, Chennai - 600 097, Tamil Nadu, India.
                         </p>

@@ -1,0 +1,99 @@
+.Section3 {
+  display: flex;
+  justify-content: center;
+  background-color: #F8F7F3;
+  position: relative;
+}
+
+/* ✅ Responsive, centered, wrapping tab wrapper */
+.tabWrapper {
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 800px;
+  background-color: #F4F4F4;
+  border-radius: 999px;
+  box-shadow: inset 0px 0px 4px #0000001A;
+  padding: 10px 12px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 12px;
+  z-index: 10;
+}
+
+/* ✅ Responsive pill buttons */
+.tabButton {
+  padding: 12px 60px;
+  font-weight: 700;
+  font-size: 15px;
+  border-radius: 99px;
+  background-color: white;
+  color: #4b5563;
+  border: 1px solid #e5e7eb;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.tabButton:hover {
+  background-color: #21409A;
+  color: white;
+  border-color: #21409A;
+}
+
+.activeTab {
+  background-color: #21409A;
+  color: white;
+  border-color: #21409A;
+}
+
+
+
+/* Other styles (unchanged from your setup) */
+.Section3ProductPagetitle {
+  color: #21409A;
+  font-size: 35px;
+  font-weight: 800;
+}
+.Section3Description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+}
+.PrimaryButton {
+  color: #21409A;
+  border: 1px solid #21409A;
+  background-color: white;
+  border-radius: 10px;
+  padding: 8px 20px;
+  font-weight: 700;
+  font-size: 16px;
+  background-image: linear-gradient(to top, #21409A 50%, #fff 50%);
+  background-size: 100% 200%;
+  background-position: top;
+  transition: all 0.3s ease;
+}
+.PrimaryButton:hover {
+  background-position: bottom;
+  color: white;
+}
+
+/* 👇 Responsive tweaks for smaller screens */
+@media screen and (max-width: 768px) {
+  .tabButton {
+    padding: 10px 24px;
+    font-size: 10px;
+  }
+
+  .tabWrapper {
+    gap: 0px;
+    padding: 8px;
+  }
+    .responsiveImage {
+    width: 50% !important;
+    height: auto !important;
+    max-width: 320px;
+  }
+}

@@ -1,0 +1,52 @@
+.Section4{
+  padding: 70px 100px 0px 100px;
+}
+.Section4Heading1{
+  color: #BFBFBF;
+  font-size: 18px;
+  font-weight: 450;
+  line-height: 28px;
+}
+.Section4Heading2{
+  font-size: 35px;
+  font-weight:100 !important;
+  line-height: 45px;
+}
+/* .Section4Content{} */
+.Section4Wave {
+  position: absolute;
+  background-image: url('../../assets/HomepageSection4Vector.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+  width: 306.59px;
+  height: 204.43px;
+  bottom: 0;
+  right: 0;
+  z-index: 0;
+}
+
+.PrimaryButton {
+  color: #fff;
+  border: 1px solid #fff;
+  background-color: white;
+  border-radius: 10px;
+  padding: 8px 20px;
+  font-weight: 700;
+  font-size: 16px;
+  background-image: linear-gradient(to top, #fff 50%, #21409A 50%);
+  background-size: 100% 200%;
+  background-position: top;
+  transition: all 0.3s ease;
+}
+
+.PrimaryButton:hover {
+  background-position: bottom;
+  color: #21409A;
+}
+
+@media (max-width : 768px) {
+  .Section4{
+  padding: 40px;
+}
+}

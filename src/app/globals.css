@@ -3,7 +3,7 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  --font-sans: 'Meta Pro', Arial, Helvetica, sans-serif;
+  --font-sans: 'Meta Pro', sans-serif;
 }
 
 @theme inline {
@@ -19,38 +19,243 @@
     --foreground: #ededed;
   }
 }
+
 @font-face {
-  font-family: 'Meta Pro';
-  src: url('/fonts/meta-pro/metapro_bolditalic.otf') format('opentype');
-  font-weight: 700;
-  font-style: italic;
-  font-display: swap;
+    font-family: 'Meta Pro';
+    src: url('../../public/fonts/meta-pro/MetaPro-Thin.woff2') format('woff2'),
+        url('../../public/fonts/meta-pro/MetaPro-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
 }
+
 @font-face {
-  font-family: 'Meta Pro';
-  src: url('/fonts/meta-pro/metapro_normal.otf') format('opentype');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
+    font-family: 'Meta Pro';
+    src: url('../../public/fonts/meta-pro/MetaPro-ThinItalic.woff2') format('woff2'),
+        url('../../public/fonts/meta-pro/MetaPro-ThinItalic.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
 }
+
 @font-face {
-  font-family: 'Meta Pro';
-  src: url('/fonts/meta-pro/metapro_normalitalic.ttf') format('truetype');
-  font-weight: 400;
-  font-style: italic;
-  font-display: swap;
+    font-family: 'Meta Pro';
+    src: url('../../public/fonts/meta-pro/MetaPro.woff2') format('woff2'),
+        url('../../public/fonts/meta-pro/MetaPro.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }
+
 @font-face {
-  font-family: 'Meta Pro';
-  src: url('/fonts/meta-pro/metaPro-bold.otf') format('opentype');
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
+    font-family: 'Meta Pro';
+    src: url('../../public/fonts/meta-pro/MetaPro-Italic.woff2') format('woff2'),
+        url('../../public/fonts/meta-pro/MetaPro-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Meta Pro';
+    src: url('../../public/fonts/meta-pro/MetaPro-Medium.woff2') format('woff2'),
+        url('../../public/fonts/meta-pro/MetaPro-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Meta Pro';
+    src: url('../../public/fonts/meta-pro/MetaPro-MediumItalic.woff2') format('woff2'),
+        url('../../public/fonts/meta-pro/MetaPro-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Meta Pro Cond Xbold';
+    src: url('../../public/fonts/meta-pro/MetaPro-CondXbold.woff2') format('woff2'),
+        url('../../public/fonts/meta-pro/MetaPro-CondXbold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Meta Pro Cond Xbold';
+    src: url('../../public/fonts/meta-pro/MetaPro-CondXboldItalic.woff2') format('woff2'),
+        url('../../public/fonts/meta-pro/MetaPro-CondXboldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Meta Pro Cond';
+    src: url('../../public/fonts/meta-pro/MetaPro-CondItalic.woff2') format('woff2'),
+        url('../../public/fonts/meta-pro/MetaPro-CondItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Meta Pro';
+    src: url('../../public/fonts/meta-pro/MetaPro-LightItalic.woff2') format('woff2'),
+        url('../../public/fonts/meta-pro/MetaPro-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Meta Pro';
+    src: url('../../public/fonts/meta-pro/MetaPro-Light.woff2') format('woff2'),
+        url('../../public/fonts/meta-pro/MetaPro-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Meta Pro Cond';
+    src: url('../../public/fonts/meta-pro/MetaPro-Cond.woff2') format('woff2'),
+        url('../../public/fonts/meta-pro/MetaPro-Cond.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Meta Pro Cond Book';
+    src: url('../../public/fonts/meta-pro/MetaPro-CondBook.woff2') format('woff2'),
+        url('../../public/fonts/meta-pro/MetaPro-CondBook.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Meta Pro Cond Book';
+    src: url('../../public/fonts/meta-pro/MetaPro-CondBookItalic.woff2') format('woff2'),
+        url('../../public/fonts/meta-pro/MetaPro-CondBookItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Meta Pro Cond';
+    src: url('../../public/fonts/meta-pro/MetaPro-CondMedium.woff2') format('woff2'),
+        url('../../public/fonts/meta-pro/MetaPro-CondMedium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Meta Pro Cond';
+    src: url('../../public/fonts/meta-pro/MetaPro-CondBlackItalic.woff2') format('woff2'),
+        url('../../public/fonts/meta-pro/MetaPro-CondBlackItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Meta Pro Cond';
+    src: url('../../public/fonts/meta-pro/MetaPro-CondBlack.woff2') format('woff2'),
+        url('../../public/fonts/meta-pro/MetaPro-CondBlack.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Meta Pro Cond';
+    src: url('../../public/fonts/meta-pro/MetaPro-CondMediumItalic.woff2') format('woff2'),
+        url('../../public/fonts/meta-pro/MetaPro-CondMediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Meta Pro Book';
+    src: url('../../public/fonts/meta-pro/MetaPro-BookItalic.woff2') format('woff2'),
+        url('../../public/fonts/meta-pro/MetaPro-BookItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Meta Pro';
+    src: url('../../public/fonts/meta-pro/MetaPro-BoldItalic.woff2') format('woff2'),
+        url('../../public/fonts/meta-pro/MetaPro-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Meta Pro Cond';
+    src: url('../../public/fonts/meta-pro/MetaPro-CondBoldItalic.woff2') format('woff2'),
+        url('../../public/fonts/meta-pro/MetaPro-CondBoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Meta Pro Book';
+    src: url('../../public/fonts/meta-pro/MetaPro-Book.woff2') format('woff2'),
+        url('../../public/fonts/meta-pro/MetaPro-Book.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Meta Pro Cond';
+    src: url('../../public/fonts/meta-pro/MetaPro-CondBold.woff2') format('woff2'),
+        url('../../public/fonts/meta-pro/MetaPro-CondBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Meta Pro';
+    src: url('../../public/fonts/meta-pro/MetaPro-Bold.woff2') format('woff2'),
+        url('../../public/fonts/meta-pro/MetaPro-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Meta Pro';
+    src: url('../../public/fonts/meta-pro/MetaPro-Black.woff2') format('woff2'),
+        url('../../public/fonts/meta-pro/MetaPro-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Meta Pro';
+    src: url('../../public/fonts/meta-pro/MetaPro-BlackItalic.woff2') format('woff2'),
+        url('../../public/fonts/meta-pro/MetaPro-BlackItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
 }
 
 
+/* ===== Global Font ===== */
 body {
-  /* background: var(--background); */
-  color: var(--foreground);
   font-family: 'Meta Pro', sans-serif;
 }

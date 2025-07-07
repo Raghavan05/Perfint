@@ -6,10 +6,10 @@ import Footer from './components/Footer/Footer';
 
 export default function Page() {
   return (
-    <div>
+    <section>
       <Navbar />
       <Home/>
       <Footer/>
-    </div>
+    </section>
   );
 }

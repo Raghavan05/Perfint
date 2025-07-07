@@ -1,0 +1,234 @@
+@font-face {
+    font-family: 'Meta Pro';
+    src: url('MetaPro-Thin.woff2') format('woff2'),
+        url('MetaPro-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Meta Pro';
+    src: url('MetaPro-ThinItalic.woff2') format('woff2'),
+        url('MetaPro-ThinItalic.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Meta Pro';
+    src: url('MetaPro.woff2') format('woff2'),
+        url('MetaPro.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Meta Pro';
+    src: url('MetaPro-Italic.woff2') format('woff2'),
+        url('MetaPro-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Meta Pro';
+    src: url('MetaPro-Medium.woff2') format('woff2'),
+        url('MetaPro-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Meta Pro';
+    src: url('MetaPro-MediumItalic.woff2') format('woff2'),
+        url('MetaPro-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Meta Pro Cond Xbold';
+    src: url('MetaPro-CondXbold.woff2') format('woff2'),
+        url('MetaPro-CondXbold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Meta Pro Cond Xbold';
+    src: url('MetaPro-CondXboldItalic.woff2') format('woff2'),
+        url('MetaPro-CondXboldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Meta Pro Cond';
+    src: url('MetaPro-CondItalic.woff2') format('woff2'),
+        url('MetaPro-CondItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Meta Pro';
+    src: url('MetaPro-LightItalic.woff2') format('woff2'),
+        url('MetaPro-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Meta Pro';
+    src: url('MetaPro-Light.woff2') format('woff2'),
+        url('MetaPro-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Meta Pro Cond';
+    src: url('MetaPro-Cond.woff2') format('woff2'),
+        url('MetaPro-Cond.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Meta Pro Cond Book';
+    src: url('MetaPro-CondBook.woff2') format('woff2'),
+        url('MetaPro-CondBook.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Meta Pro Cond Book';
+    src: url('MetaPro-CondBookItalic.woff2') format('woff2'),
+        url('MetaPro-CondBookItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Meta Pro Cond';
+    src: url('MetaPro-CondMedium.woff2') format('woff2'),
+        url('MetaPro-CondMedium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Meta Pro Cond';
+    src: url('MetaPro-CondBlackItalic.woff2') format('woff2'),
+        url('MetaPro-CondBlackItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Meta Pro Cond';
+    src: url('MetaPro-CondBlack.woff2') format('woff2'),
+        url('MetaPro-CondBlack.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Meta Pro Cond';
+    src: url('MetaPro-CondMediumItalic.woff2') format('woff2'),
+        url('MetaPro-CondMediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Meta Pro Book';
+    src: url('MetaPro-BookItalic.woff2') format('woff2'),
+        url('MetaPro-BookItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Meta Pro';
+    src: url('MetaPro-BoldItalic.woff2') format('woff2'),
+        url('MetaPro-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Meta Pro Cond';
+    src: url('MetaPro-CondBoldItalic.woff2') format('woff2'),
+        url('MetaPro-CondBoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Meta Pro Book';
+    src: url('MetaPro-Book.woff2') format('woff2'),
+        url('MetaPro-Book.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Meta Pro Cond';
+    src: url('MetaPro-CondBold.woff2') format('woff2'),
+        url('MetaPro-CondBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Meta Pro';
+    src: url('MetaPro-Bold.woff2') format('woff2'),
+        url('MetaPro-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Meta Pro';
+    src: url('MetaPro-Black.woff2') format('woff2'),
+        url('MetaPro-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Meta Pro';
+    src: url('MetaPro-BlackItalic.woff2') format('woff2'),
+        url('MetaPro-BlackItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
