@@ -9,9 +9,9 @@ import styles from './Section1.module.css'
 export default function Section1() {
   return (
     <section className={`${styles.Section1}  bg-white py-12 relative`}>
-      <div className="max-w-screen-xl mx-auto">
+      <div className="max-w-screen-lg mx-auto ">
         {/* Top Section with Image and Heading */}
-        <div className="flex flex-col lg:flex-row items-center gap-10 mb-16">
+<div className="flex flex-col lg:flex-row items-center gap-10 mb-16">
           {/* Left Text */}
           <div className="w-full lg:w-1/2 lg:text-center lg:text-left">
             <h2 className={`${styles.Section1HeroSectionHeading} text-3xl md:text-4xl font-semibold text-[#000]`}>
