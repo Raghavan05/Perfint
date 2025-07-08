@@ -3,7 +3,7 @@ import Image from 'next/image';
 import styles from './Section4.module.css';
 import HomepageSection4Img1 from '../../assets/HomepageSection4Img1alt.png'
 
-export default function AboutSection() {
+export default function Section4() {
   return (
     <section className={`${styles.Section4} max-w-screen-lg mx-auto bg-[#21409A] text-white rounded-t-[20px] relative overflow-hidden`}>
       <div className={styles.Section4Wave}></div>

@@ -9,7 +9,7 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-meta: 'Meta Pro', Arial, Helvetica, sans-serif;
+  --font-meta: 'Meta Pro', sans-serif;
   --font-mono: var(--font-geist-mono);
 }
 

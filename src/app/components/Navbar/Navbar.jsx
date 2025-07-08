@@ -57,7 +57,7 @@ export default function Navbar({ setShowPopup = () => { } }) {
 
   return (
     <header className=" bg-white shadow top-0 left-0 w-full z-50">
-      <nav className="max-w-screen-xl mx-auto flex items-center justify-between lg:justify-around px-6 py-5">
+      <nav className="max-w-screen-2xl mx-auto flex items-center justify-between lg:justify-around px-6 py-5">
         <Link href="/" className="flex items-center">
           <Image src={logo} alt="Logo" className="w-28 h-auto" priority />
         </Link>

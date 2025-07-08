@@ -56,12 +56,12 @@ const tabContent = {
     },
 };
 
-export default function ProductTabs() {
+export default function Section3() {
     const [activeTab, setActiveTab] = useState('MAXIO');
     const { title,trademark, description, image, width, height, subImage, note } = tabContent[activeTab];
 
     return (
-        <section className={`${styles.Section3} relative max-w-screen-lg mx-auto lg:p-10 bg-white rounded-xl shadow-md`}>
+        <section className={`${styles.Section3} relative max-w-screen-lg mx-auto my-10 lg:p-10 bg-white rounded-xl shadow-md`}>
             {/* Tab wrapper */}
             <div className={`${styles.tabWrapper}`}>
                 {tabs.map((tab) => (

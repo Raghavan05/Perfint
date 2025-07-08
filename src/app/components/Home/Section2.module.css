@@ -1,0 +1,327 @@
+.Section2 {
+    display: flex;
+    justify-content: center;
+    background-color: #F8F7F3;
+    position: relative;
+}
+
+.Section2HeroSectionHeading {
+    font-size: 28px;
+    font-weight: 300;
+    line-height: 39px;
+    color: #21409A;
+}
+
+.hexCenter {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: 32%;
+    left: 57%;
+    transform: translate(-40%, -60%);
+}
+
+/* ✅ Responsive, centered, wrapping tab wrapper */
+.tabWrapper {
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: fit-content;
+    background-color: #F4F4F4;
+    border-radius: 999px;
+    box-shadow: 0px 4px 60px 0px rgba(0, 0, 0, 0.12);
+    border: 1px solid rgba(228, 228, 228, 1);
+    padding: 10px 12px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 12px;
+    z-index: 10;
+}
+
+/* ✅ Responsive pill buttons */
+.tabButton {
+    padding: 12px 60px;
+    font-weight: 700;
+    font-size: 15px;
+    border-radius: 99px;
+    background-color: white;
+    color: #4b5563;
+    border: 1px solid #e5e7eb;
+    text-align: center;
+    transition: all 0.3s ease;
+    line-height: 17px;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+    text-wrap: nowrap;
+
+}
+
+.tabButton:hover {
+    background-color: rgba(243, 112, 48, 1);
+    color: white;
+}
+
+.activeTab {
+    background-color: rgba(243, 112, 48, 1);
+    color: white;
+}
+
+
+.Section2ContentGrid {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.Section2CardGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.Section2HospitalCard {
+    background-color: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 7px;
+    overflow: hidden;
+    text-align: center;
+    font-size: 0.75rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.Section2HospitalImage {
+    width: 146px;
+    height: 142px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+
+.Section2HospitalText {
+    padding: 0.5rem;
+    font-weight: 500;
+    color: #1f2937;
+    line-height: 1.2;
+}
+
+.Section2HospitalLocation {
+    color: #6b7280;
+    font-weight: 400;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .Section2CardGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .Section2CardGrid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.Section2CarouselWrapper {
+    overflow: hidden;
+    width: 100%;
+}
+
+.Section2CarouselTrack {
+    display: flex;
+    transition: transform 0.3s ease;
+    will-change: transform;
+}
+
+.Section2CarouselSlide {
+    flex: 0 0 33.3333%;
+    /* 3 visible items */
+    display: flex;
+    justify-content: center;
+}
+
+/* Responsive: 2 items on tablets */
+@media (max-width: 768px) {
+    .Section2CarouselSlide {
+        flex: 0 0 50%;
+    }
+}
+
+/* Responsive: 1 item on small phones */
+@media (max-width: 480px) {
+    .Section2CarouselSlide {
+        flex: 0 0 100%;
+    }
+}
+
+/* Other styles (unchanged from your setup) */
+.Section3ProductPagetitle {
+    color: #21409A;
+    font-size: 35px;
+    font-weight: 800;
+}
+
+.Section3Description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.PrimaryButton {
+    color: #21409A;
+    border: 1px solid #21409A;
+    background-color: white;
+    border-radius: 10px;
+    padding: 8px 20px;
+    font-weight: 700;
+    font-size: 16px;
+    background-image: linear-gradient(to top, #21409A 50%, #fff 50%);
+    background-size: 100% 200%;
+    background-position: top;
+    transition: all 0.3s ease;
+}
+
+.PrimaryButton:hover {
+    background-position: bottom;
+    color: white;
+}
+
+/* 👇 Responsive tweaks for smaller screens */
+@media screen and (max-width: 768px) {
+    .tabButton {
+        padding: 10px 24px;
+        font-size: 10px;
+    }
+
+    .tabWrapper {
+        gap: 0px;
+        padding: 8px;
+    }
+
+    .responsiveImage {
+        width: 50% !important;
+        height: auto !important;
+        max-width: 320px;
+    }
+}
+
+/* ANATOMY DESIGNS */
+
+.anatomyPointWrapper {
+    position: absolute;
+    top: 56%;
+    left: 46%;
+    width: 30px;
+    height: 30px;
+}
+
+.anatomyDot {
+  position: relative;
+  width: 18px;
+  height: 18px;
+    background: rgba(237, 44, 45, 1);
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10;
+  animation: pulse 2s infinite ease-in-out;
+  box-shadow: 0 0 0 rgba(237, 44, 45, 0.7);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 0, 0, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 20px 10px rgba(255, 0, 0, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 0, 0, 0);
+  }
+}
+.anatomyContainer:hover .anatomyDot {
+  opacity: 0.4;
+  transform: scale(0.8);
+  animation: none; /* stop pulsing */
+}
+
+/* Keep the hovered one bright */
+.anatomyPointWrapper:hover .anatomyDot {
+  opacity: 1 !important;
+  transform: scale(1.1) !important;
+  animation: pulse 2s infinite ease-in-out !important;
+  z-index: 20;
+}
+
+
+.popupImage {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translate(-50%, -50%) scale(0);
+  transform-origin: center center;
+  opacity: 0;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+  z-index: 20;
+  pointer-events: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Text inside the image */
+.popupText {
+    position: absolute;
+  top: -10%;
+  left: 0%;
+  margin-top: 8px;
+  font-size: 14px;
+  color: #fff;
+  padding: 10px;
+  background-color: #21409A;
+  font-weight: 600;
+  opacity: 0;
+}
+
+/* Show popup + bounce image */
+.anatomyPointWrapper:hover .popupImage {
+  opacity: 1;
+  transform: translate(-50%, -120%) scale(2.2);
+}
+
+/* Show text with slight bounce */
+.anatomyPointWrapper:hover .popupText {
+    opacity: 1;
+    transform: translate(-50%, -120%)  scale(1);
+    animation: bounceOut 0.9s ease;
+}
+
+@keyframes bounceOut {
+    0% {
+        transform: translate(-50%, -50%) scale(0);
+        opacity: 0;
+    }
+
+    50% {
+        transform: translate(-50%, -130%) scale(0);
+        opacity: 1;
+    }
+
+    70% {
+        transform: translate(-50%, -115%) scale(1.9);
+    }
+
+    100% {
+        transform: translate(-50%, -120%) scale(2);
+    }
+}
+
+
+.anatomyPointWrapper:hover .popupImage {
+    opacity: 1;
+    transform: translateY(-70px) scale(1.9);
+    animation: popBounce 0.1s ease;
+}
