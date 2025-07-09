@@ -12,7 +12,7 @@ import centerIcon from '../../assets/HomepageSection5CenterHex.svg';
 
 export default function Section5() {
   return (
-    <section className="bg-[#FBF9F4] py-16 px-6 lg:px-20 rounded-b-[20px] max-w-screen-lg mx-auto mb-10">
+    <section className="bg-[#FBF9F4] py-16 px-6 lg:px-20 rounded-b-[20px] max-w-screen-xl mx-10 mx-auto mb-10">
       <div className="grid lg:grid-cols-2 gap-10 items-center">
         
         {/* Left Hex Shape */}

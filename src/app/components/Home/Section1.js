@@ -9,9 +9,9 @@ import styles from './Section1.module.css'
 export default function Section1() {
   return (
     <section className={`${styles.Section1}  bg-white py-12 relative`}>
-      <div className="max-w-screen-lg mx-auto ">
+      <div className="max-w-screen-xl mx-auto ">
         {/* Top Section with Image and Heading */}
-<div className="flex flex-col lg:flex-row items-center gap-10 mb-16">
+        <div className="flex flex-col lg:flex-row items-center mx-10 mb-16">
           {/* Left Text */}
           <div className="w-full lg:w-1/2 lg:text-center lg:text-left">
             <h2 className={`${styles.Section1HeroSectionHeading} text-3xl md:text-4xl font-semibold text-[#000]`}>
@@ -40,7 +40,7 @@ export default function Section1() {
           </div>
         </div>
         {/* Stats Cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 place-items-center">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 place-items-center">
           {/* Card 1 */}
           <div className={`${styles.Section1Card1} bg-[#FCEAE1] p-6 rounded-lg `}>
             <Image src={HerosectionVector1} alt="HerosectionVector1" />

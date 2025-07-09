@@ -5,7 +5,7 @@ import HomepageSection4Img1 from '../../assets/HomepageSection4Img1alt.png'
 
 export default function Section4() {
   return (
-    <section className={`${styles.Section4} max-w-screen-lg mx-auto bg-[#21409A] text-white rounded-t-[20px] relative overflow-hidden`}>
+    <section className={`${styles.Section4} max-w-screen-xl mx-10 mx-auto bg-[#21409A] text-white rounded-t-[20px] relative overflow-hidden`}>
       <div className={styles.Section4Wave}></div>
 
       <div className={`${styles.Section4Content} grid lg:grid-cols-2 gap-10 items-center`}>

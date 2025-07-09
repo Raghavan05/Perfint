@@ -8,7 +8,6 @@ export default function Footer() {
     return (
         <footer className="bg-[#222222] text-white py-12 px-4 lg:px-20">
             <div className="container mx-auto flex flex-col lg:flex-row lg:justify-between gap-10">
-
                 {/* Left Side */}
                 <div className="lg:w-1/3 flex flex-col items-start gap-6">
                     {/* Logo + Tagline */}

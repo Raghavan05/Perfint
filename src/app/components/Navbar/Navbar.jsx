@@ -57,7 +57,7 @@ export default function Navbar({ setShowPopup = () => { } }) {
 
   return (
     <header className=" bg-white shadow top-0 left-0 w-full z-50">
-      <nav className="max-w-screen-2xl mx-auto flex items-center justify-between lg:justify-around px-6 py-5">
+      <nav className={`${styles.navbar} container mx-auto flex flex-row items-center justify-between px-30 py-5`}>
         <Link href="/" className="flex items-center">
           <Image src={logo} alt="Logo" className="w-28 h-auto" priority />
         </Link>
@@ -67,7 +67,7 @@ export default function Navbar({ setShowPopup = () => { } }) {
             <div className={`relative ${styles.navItem}`} key={i}>
               <Link
                 href={item.path}
-                className={`text-gray-700 hover:text-blue-600 transition font-medium ${styles.navLink} ${pathname === item.path ? 'text-blue-600 font-semibold' : ''
+                className={`${styles.navLink} ${pathname === item.path ? 'text-blue-600 font-semibold' : ''
                   }`}
               >
                 {item.name}

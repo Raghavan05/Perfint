@@ -24,8 +24,8 @@
 .Section1Card2,
 .Section1Card3 {
   width: 100%;
-  max-width: 306px;
-  height: 204px;
+  max-width: 360px;
+  height: 240px;
 }
 
 .Section1Card1 h3 span,
@@ -49,8 +49,8 @@
   background-repeat: no-repeat;
   background-size: 30% auto;     /* Scales width to 80%, height auto */
   background-position: right 0px top 0px; /* Moves it slightly inward from the right */
-  width: 306.59px;
-  height: 204.43px;
+  width: 360px;
+  height: 240px;
   border-radius: 12px;
   padding: 20px;
   position: relative;
@@ -62,8 +62,8 @@
   background-repeat: no-repeat;
   background-size: 60% auto;     /* Scales width to 80%, height auto */
   background-position: right 10px top 10px; /* Moves it slightly inward from the right */
-  width: 306.59px;
-  height: 204.43px;
+  width: 360px;
+  height: 240px;
   border-radius: 12px;
   padding: 20px;
   position: relative;
@@ -76,8 +76,8 @@
   background-repeat: no-repeat;
   background-size: contain;
   background-position: right;
-  width: 306.59px;
-  height: 204.43px;
+  width: 360px;
+  height: 240px;
 }
 .videoFeatherWrapper {
   position: relative;

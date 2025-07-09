@@ -1,3 +1,7 @@
+.navbar{
+  border-bottom: 1px #E0E0E080 solid;
+}
+
 /* === NavLink Underline on Hover === */
 .navLink {
   position: relative;
@@ -31,8 +35,8 @@
 .dropdown {
   position: absolute;
   top: 55px;
-  left: -400px;
-  width: 1320px;
+  left: -430px;
+  width: 1300px;
   background-color: white;
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
   opacity: 0;

@@ -76,7 +76,7 @@ export default function Section2() {
     const [activeTab, setActiveTab] = useState('INTERVENTIONAL ONCOLOGY');
 
     return (
-        <section className={`${styles.Section2} relative max-w-screen-lg mx-auto mt-10 mb-20 bg-white rounded-xl shadow-md`}>
+        <section className={`${styles.Section2} relative max-w-screen-xl mx-10 mx-auto mt-10 mb-20 bg-white rounded-xl`}>
             {/* Tab wrapper */}
             <div className={`${styles.tabWrapper}`}>
                 {tabs.map((tab) => (
@@ -91,9 +91,9 @@ export default function Section2() {
             </div>
 
             {/* Content in two fixed columns */}
-            <div className="grid grid-cols-1 md:grid-cols-2 items-center ">
-                <div className="flex pt-20 pl-10">
-                    <div className="w-full max-w-xl mt-12 space-y-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 items-center justify-end ">
+                <div className="flex pt-0 pl-10 pr-0">
+                    <div className="w-full max-w-screen-xl mt-12 space-y-13">
                         <h2 className={`${styles.Section2HeroSectionHeading} `}>
                             Perfint sets new standards in <br />
                             <span className="text-orange-500">global medical practise</span>
@@ -146,7 +146,7 @@ export default function Section2() {
                                 ))}
                             </div>
                         </div>
-                        <div className="flex items-center justify-end pt-5 space-x-2">                            
+                        <div className="flex items-center justify-end pt-5 px-10">                            
                             <button
                                 onClick={handleNext}
                             >
@@ -155,10 +155,9 @@ export default function Section2() {
                         </div>
                     </div>
                 </div>
-                <div className="max-w-xl pt-20 pr-10 pl-10 bg-[#F8F9FF]">
-                    <div className='flex flex-col'>
-                        <h2 className={`${styles.Section2HeroSectionHeading}`}>
-                            Explore the Perfint Healthcare <span className="text-orange-500">Solutions by Organ</span>
+                <div className={`max-w-screen-xl pt-20 pl-10 bg-[#F8F9FF]`}>
+                        <h2 className={`${styles.Section2HeroSectionHeading} ml-7`}>
+                            Explore the Perfint Healthcare <br/><span className="text-orange-500">Solutions by Organ</span>
                         </h2>
                         <div className="">
                             <Image
@@ -167,6 +166,7 @@ export default function Section2() {
                                 className={styles.hexCenter}
                             />
                         </div>
+                    <div className={`${styles.Section2leftSide} '`}>
                         <div className="relative w-full max-w-[469px]">
                             <Image
                                 src={Section1anatomyImg}
@@ -175,11 +175,11 @@ export default function Section2() {
                             />
 
                             {/* Heart */}
-                            <div className={`${styles.anatomyPointWrapper}`} style={{ top: '56%', left: '46%' }}>
+                            <div className={`${styles.anatomyPointWrapper}`} style={{ top: '54%', left: '44%' }}>
                                 <div className={styles.anatomyDot}></div>
                                 <div className={styles.popupImage}>
+                                    <div className={styles.popupText}>Heart</div>
                                     <Image src={anatomyHeart} alt="Heart" className="" />
-                                    {/* <div className={styles.popupText}>Heart</div> */}
                                 </div>
                             </div>
 
@@ -189,8 +189,8 @@ export default function Section2() {
                             <div className={`${styles.anatomyPointWrapper}`} style={{ top: '48%', left: '30%' }}>
                                 <div className={styles.anatomyDot}></div>
                                 <div className={styles.popupImage}>
+                                      <div className={styles.popupText}>Lungs</div>
                                     <Image src={anatomyLungs} alt="Lungs" className="" />
-                                      {/* <div className={styles.popupText}>Heart</div> */}
                                 </div>
                             </div>
                             </div>
@@ -199,18 +199,18 @@ export default function Section2() {
                             <div className={`${styles.anatomyPointWrapper}`} style={{ top: '68%', left: '43%' }}>
                                 <div className={styles.anatomyDot}></div>
                                 <div className={styles.popupImage}>
+                                      <div className={styles.popupText}>Pancreas</div>
                                     <Image src={anatomyPancreas} alt="Pancreas" className="" />
-                                      {/* <div className={styles.popupText}>Pancreas</div> */}
 
                                 </div>
                             </div>
 
                             {/* Liver */}
-                            <div className={`${styles.anatomyPointWrapper}`} style={{ top: '63%', left: '36%' }}>
+                            <div className={`${styles.anatomyPointWrapper}`} style={{ top: '61%', left: '33%' }}>
                                 <div className={styles.anatomyDot}></div>
                                 <div className={styles.popupImage}>
+                                    <div className={styles.popupText}>Liver</div>
                                     <Image src={anatomyLiver} alt="Liver" className="" />
-                                    {/* <div className={styles.popupText}>Liver</div> */}
                                 </div>
                             </div>
 
@@ -218,8 +218,8 @@ export default function Section2() {
                             <div className={`${styles.anatomyPointWrapper}`} style={{ top: '80%', left: '50%' }}>
                                 <div className={styles.anatomyDot}></div>
                                 <div className={styles.popupImage}>
+                                    <div className={`${styles.popupText} text-nowrap`}>Right Kidney</div>
                                     <Image src={anatomyRightKidney} alt="Right Kidney" className="" />
-                                    {/* <div className={styles.popupText}>Right Kidney</div> */}
                                 </div>
                             </div>
 
@@ -227,15 +227,13 @@ export default function Section2() {
                             <div className={`${styles.anatomyPointWrapper}`} style={{ top: '80%', left: '30%' }}>
                                 <div className={styles.anatomyDot}></div>
                                 <div className={styles.popupImage}>
+                                    <div className={`${styles.popupText} text-nowrap`}>Left Kidney</div>
                                     <Image src={anatomyLeftKidney} alt="Left Kidney"  />
-                                    {/* <div className={styles.popupText}>Left Kidney</div> */}
                                 </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
-
             </div>
         </section>
 
