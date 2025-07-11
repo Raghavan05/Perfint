@@ -61,7 +61,7 @@ export default function Section3() {
     const { title,trademark, description, image, width, height, subImage, note } = tabContent[activeTab];
 
     return (
-        <section className={`${styles.Section3} relative max-w-screen-xl mx-10 mx-auto my-10 lg:p-10 bg-white rounded-xl shadow-md`}>
+        <section className={`${styles.Section3} relative max-w-screen-xl mx-10 mx-auto my-10 lg:p-10 bg-white rounded-xl`}>
             {/* Tab wrapper */}
             <div className={`${styles.tabWrapper}`}>
                 {tabs.map((tab) => (

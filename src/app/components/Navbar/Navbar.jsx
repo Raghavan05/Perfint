@@ -13,7 +13,7 @@ import RobioEXNavbarProduct from '../../assets/RobioEXNavbarProduct.png'
 import NaviosNavbarProduct from '../../assets/NaviosNavbarProduct.png'
 import Disha2NavbarProduct from '../../assets/Disha2NavbarProduct.png'
 
-export default function Navbar({ setShowPopup = () => { } }) {
+export default function Navbar() {
   const pathname = usePathname();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [showSearch, setShowSearch] = useState(false);
@@ -57,7 +57,7 @@ export default function Navbar({ setShowPopup = () => { } }) {
 
   return (
     <header className=" bg-white shadow top-0 left-0 w-full z-50">
-      <nav className={`${styles.navbar} container mx-auto flex flex-row items-center justify-between px-30 py-5`}>
+      <nav className={`${styles.navbar} max-w-screen-3xl mx-auto flex items-center justify-between lg:px-30 px-7 py-5`}>
         <Link href="/" className="flex items-center">
           <Image src={logo} alt="Logo" className="w-28 h-auto" priority />
         </Link>
@@ -247,7 +247,7 @@ export default function Navbar({ setShowPopup = () => { } }) {
       {/* Backdrop */}
       {isMenuOpen && (
         <div
-          className="fixed inset-0 bg-black bg-opacity-30 z-40"
+          className="fixed inset-0 bg-opacity-30 z-40"
           onClick={() => setIsMenuOpen(false)}
         ></div>
       )}

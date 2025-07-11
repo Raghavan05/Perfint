@@ -18,7 +18,7 @@ export default function Section1() {
               Robotic <span className="text-orange-500">Precision</span>, aiding{" "}
               <span className="text-[#21409A]">human touch</span>
             </h2>
-            <p className={`${styles.Section1HeroSectionPara} mt-4 text-gray-600 text-base`}>
+            <p className={`${styles.Section1HeroSectionPara} my-5 text-gray-600 text-base`}>
               Delivering confidence to physicians, hope to patients — our devices
               ensure superior tumor coverage for better outcomes.
             </p>
@@ -40,33 +40,35 @@ export default function Section1() {
           </div>
         </div>
         {/* Stats Cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 place-items-center">
+<div className="grid grid-cols-2 gap-y-4 lg:grid-cols-3 place-items-center">
           {/* Card 1 */}
-          <div className={`${styles.Section1Card1} bg-[#FCEAE1] p-6 rounded-lg `}>
+          <div className={`${styles.Section1Card1} bg-[#FCEAE1] rounded-lg col-span-1`}>
             <Image src={HerosectionVector1} alt="HerosectionVector1" />
-            <h3 className="mt-5 text-[35px] font-bold text-black">
-              <CountUp end={135} duration={10} />
+            <h3 className="lg:mt-5">
+              <CountUp end={135} duration={5} />
             </h3>
-            <p className="mt-2 text-[18px] text-gray-800">Institutional Partners</p>
+            <p className="lg:mt-2 text-[18px] text-gray-800">Institutional Partners</p>
           </div>
 
           {/* Card 2 */}
-          <div className={`${styles.Section1Card2}  bg-[#DEE3FF] p-6 rounded-lg shadow-sm `}>
+          <div className={`${styles.Section1Card2}  bg-[#DEE3FF] p-6 rounded-lg shadow-sm col-span-1`}>
             <Image src={HerosectionVector2} alt="HerosectionVector2" />
-            <h3 className="mt-5">
+            <h3 className="lg:mt-5">
               <CountUp end={131} duration={2} />
             </h3>
             <p className="mt-2">Devices Sold Worldwide</p>
           </div>
 
           {/* Card 3 */}
-          <div className={`${styles.Section1Card3} bg-[#FFFAFA] p-6 rounded-lg shadow-sm w-full sm:col-span-2 lg:col-span-1`}>
+          {/* Card 3 */}
+          <div className={`${styles.Section1Card3} bg-[#FFFAFA] p-6 rounded-lg shadow-sm w-full col-span-2 lg:col-span-1`}>
             <Image src={HerosectionVector3} alt="HerosectionVector3" />
-            <h3 className="mt-5">
+            <h3 className="lg:mt-5">
               <CountUp end={165000} duration={2.5} separator="," />+
             </h3>
             <p className="mt-2">Procedures Done</p>
           </div>
+
         </div>
       </div>
     </section>

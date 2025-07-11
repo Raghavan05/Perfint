@@ -76,27 +76,46 @@ export default function Section2() {
     const [activeTab, setActiveTab] = useState('INTERVENTIONAL ONCOLOGY');
 
     return (
-        <section className={`${styles.Section2} relative max-w-screen-xl mx-10 mx-auto mt-10 mb-20 bg-white rounded-xl`}>
+        <section className='relative'>
             {/* Tab wrapper */}
-            <div className={`${styles.tabWrapper}`}>
-                {tabs.map((tab) => (
-                    <button
-                        key={tab}
-                        onClick={() => setActiveTab(tab)}
-                        className={`${styles.tabButton} ${activeTab === tab ? styles.activeTab : ''}`}
-                    >
-                        {tab}
-                    </button>
-                ))}
-            </div>
+    <div className={styles.tabContainer}>
+  {/* Mobile Dropdown */}
+  <select
+    className={styles.tabDropdown}
+    value={activeTab}
+    onChange={(e) => setActiveTab(e.target.value)}
+  >
+    {tabs.map((tab) => (
+      <option key={tab} value={tab}>
+        {tab}
+      </option>
+    ))}
+  </select>
+
+  {/* Desktop Tabs */}
+  <div className={styles.tabWrapper}>
+    {tabs.map((tab) => (
+      <button
+        key={tab}
+        onClick={() => setActiveTab(tab)}
+        className={`${styles.tabButton} ${activeTab === tab ? styles.activeTab : ''}`}
+      >
+        {tab}
+      </button>
+    ))}
+  </div>
+</div>
+
+
+            <div className={`${styles.Section2} relative max-w-screen-xl mx-10 mx-auto mt-10 mb-20 bg-white rounded-xl`}>
 
             {/* Content in two fixed columns */}
             <div className="grid grid-cols-1 md:grid-cols-2 items-center justify-end ">
-                <div className="flex pt-0 pl-10 pr-0">
+                <div className="flex pt-0 px-10 pr-0">
                     <div className="w-full max-w-screen-xl mt-12 space-y-13">
                         <h2 className={`${styles.Section2HeroSectionHeading} `}>
                             Perfint sets new standards in <br />
-                            <span className="text-orange-500">global medical practise</span>
+                            <span className="text-[#F37030]">global medical practise</span>
                         </h2>
                         <p className="text-sm md:text-base text-gray-700 pr-20 mb-10">
                             We are partnered with over 135 hospitals and universities worldwide,
@@ -146,7 +165,7 @@ export default function Section2() {
                                 ))}
                             </div>
                         </div>
-                        <div className="flex items-center justify-end pt-5 px-10">                            
+                        <div className="flex items-start justify-end py-5 px-10">                            
                             <button
                                 onClick={handleNext}
                             >
@@ -155,10 +174,12 @@ export default function Section2() {
                         </div>
                     </div>
                 </div>
-                <div className={`max-w-screen-xl pt-20 pl-10 bg-[#F8F9FF]`}>
+                <div className={`max-w-screen-xl pt-20 lg:pl-10 bg-[#F8F9FF]`}>
                         <h2 className={`${styles.Section2HeroSectionHeading} ml-7`}>
-                            Explore the Perfint Healthcare <br/><span className="text-orange-500">Solutions by Organ</span>
+                            Explore the Perfint Healthcare <br/><span className="text-[#F37030]">Solutions by Organ</span>
                         </h2>
+                    <div className={`${styles.Section2leftSide} '`}>
+                        <div className="relative w-full max-w-[469px]">
                         <div className="">
                             <Image
                                 src={HomepageSection5CenterHex}
@@ -166,8 +187,6 @@ export default function Section2() {
                                 className={styles.hexCenter}
                             />
                         </div>
-                    <div className={`${styles.Section2leftSide} '`}>
-                        <div className="relative w-full max-w-[469px]">
                             <Image
                                 src={Section1anatomyImg}
                                 alt="Anatomy"
@@ -235,6 +254,8 @@ export default function Section2() {
                     </div>
                 </div>
             </div>
+            </div>
+
         </section>
 
     );

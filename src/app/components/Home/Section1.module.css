@@ -109,10 +109,74 @@
     line-height: 41px;
     font-weight:300;
   }
-  .Section1Card1,
-  .Section1Card2,
-  .Section1Card3 {
-    height: auto;
-    padding: 20px;
-  }
+.Section1Card1,
+.Section1Card2 {
+  width: 165px;
+  height: 142px;
+}
+.Section1Card3{
+  width: 400px;
+  height: 142px;
+}
+.Section1Card1 h3 span,
+.Section1Card2 h3 span, 
+.Section1Card3 h3 span {
+  font-size: 25px;
+  line-height: 20px;
+  font-weight: bold;
+}
+
+.Section1Card1 p,
+.Section1Card2 p,
+.Section1Card3 p {
+  font-size: 18px ;
+  line-height: 23px ;
+  font-weight: 400 ;
+  margin-top: 8px;
+}
+
+.Section1Card1 {
+  background-image: url('../../assets/HerosectionVectorSub1.svg');
+  background-repeat: no-repeat;
+  background-size: 30% auto;     /* Scales width to 80%, height auto */
+  background-position: right 0px top 0px; /* Moves it slightly inward from the right */
+  border-radius: 8px;
+  padding:  10px 0px 10px 10px !important;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+.Section1Card1 >img {
+  width: 50px;
+  height: 50px;
+}
+.Section1Card2 {
+  background-image: url('../../assets/HerosectionVectorSub2.svg');
+  background-repeat: no-repeat;
+  background-size: 60% auto;     /* Scales width to 80%, height auto */
+  background-position: right 10px top 10px; /* Moves it slightly inward from the right */
+    padding:  10px 0px 10px 10px !important;
+  border-radius: 8px;
+  /* padding: 20px; */
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+.Section1Card2 >img {
+  width: 45px;
+  height: 45px;
+}
+.Section1Card3{
+  background-image: url('../../assets/HerosectionVectorSub3.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+  border-radius: 8px;
+    padding:  10px 0px 0px 10px !important;
+}
+.Section1Card3 >img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+}
 }
